@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import Tabs from './tabs'
 import './style.scss'
 
 
@@ -33,7 +32,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           {children}
-<Tabs />
+
         </div>
       </>
     )}
