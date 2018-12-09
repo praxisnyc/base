@@ -1,23 +1,24 @@
-# Gatsby + bootstrap 4 + SASS + ...
+# Gatsby + [bootstrap 4](https://github.com/mpolinowski/gatsby-reactstrap) + SASS + [Animate CSS](https://daneden.github.io/animate.css/)
 
-## Requirements
 
-- gatsby
-- node
-- yarn
 
 ## How to
 
-- install with `npm install`
 - run with `gatsby develop`
+- create folder with `gatsby build`
 
-## Literature
+## Claiming the project
 
-https://github.com/mpolinowski/gatsby-reactstrap
+1. [ ] rename project name on `gatsby-config.js`
+1. [ ] change `src/images/favicon.png`
 
-## TODO
+## Publishing on github (master branch only)
 
-- [ ] Test bootstrap javascript
-- [ ] Test animate with sass, bring variables
-- [ ] [Shop for other useful plugins](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/?=)
-- [ ] favicon
+1. run `gatsby build`
+1. rename public as docs with `mv public docs`
+1. push
+1. configure repo to publish via `docs/` folder
+
+## Pending
+
+- [ ] reactstrap components, with props and instruction
