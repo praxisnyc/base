@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Base - Gatsby',
   },
-  pathPrefix: `/`,
+  pathPrefix: `/base-gatsby`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,

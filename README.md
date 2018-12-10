@@ -14,6 +14,7 @@
 
 ## Publishing on github (master branch only)
 
+1. add final folder path on `gatsby-config`
 1. run `gatsby build`
 1. rename public as docs with `mv public docs`
 1. push
