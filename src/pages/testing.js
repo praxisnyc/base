@@ -7,8 +7,8 @@ import Tabs from '../components/bootstrap/tabs'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Testing it again</h1>
-    <p>Welcome to your new Gatsby site.</p>
+
+<h1>Another test, with --prefix-paths</h1>    <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <hr />
     <Tabs />
