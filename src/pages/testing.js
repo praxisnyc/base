@@ -1,50 +1,30 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
 import Layout from '../components/layout'
-import Tabs from '../components/bootstrap/tabs'
+import { Button, UncontrolledAlert, Badge, Breadcrumb, BreadcrumbItem } from 'reactstrap'
 
 const IndexPage = () => (
   <Layout>
-
-<h1>Another test, with --prefix-paths</h1>    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     <hr />
-    <Tabs />
+<Button color="secondary">
+  Nothing
+</ Button>
     <hr />
-    <Example />
+<UncontrolledAlert color="success">
+  Title
+</ UncontrolledAlert>
+<hr />
+<h2>Testing <Badge color="primary">New</ Badge></h2>
+  <hr />
+      <Breadcrumb>
+        <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
+        <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
+        <BreadcrumbItem active>Test</BreadcrumbItem>
+      </Breadcrumb>
   </Layout>
+
 )
 
-class Example extends React.Component {
-  constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.state = { collapse: false };
-  }
-
-  toggle() {
-    this.setState({ collapse: !this.state.collapse });
-  }
-
-  render() {
-    return (
-      <div>
-        <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
-        <Collapse isOpen={this.state.collapse}>
-          <Card>
-            <CardBody>
-              Anim pariatur cliche reprehenderit,
-              enim eiusmod high life accusamus terry richardson ad squid. Nihil
-              anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident.
-            </CardBody>
-          </Card>
-        </Collapse>
-      </div>
-    );
-  }
-}
 
 export default IndexPage
