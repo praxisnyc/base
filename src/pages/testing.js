@@ -2,34 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import { Button, UncontrolledAlert, Badge, ButtonGroup, ButtonToolbar, Breadcrumb, BreadcrumbItem, Popover, PopoverHeader, PopoverBody } from 'reactstrap'
-
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      popoverOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState({
-      popoverOpen: !this.state.popoverOpen
-    });
-  }
+import { Button, UncontrolledAlert, Badge, ButtonGroup, ButtonToolbar, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import Popover from '../components/bootstrap/Popover'
+import PopoverMulti from '../components/bootstrap/PopoverMulti'
 
 const IndexPage = () => (
   <Layout>
     <hr />
-     <Button id="Popover1" onClick={this.toggle}>
-          Launch Popover
-        </Button>
-        <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
-          <PopoverHeader>Popover Title</PopoverHeader>
-          <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
-        </Popover>
+        <Popover />
+    <hr />
+    <PopoverMulti />
     <hr />
 <ButtonToolbar>
   <ButtonGroup>
